@@ -257,11 +257,9 @@ export default class Calendar extends Component {
             isWeekend: isoWeekday === 0 || isoWeekday === 6,
             key: renderIndex,
             onPress: () => {
-              this.selectDate(thisMoment);
               this.props.onDateSelect && this.props.onDateSelect(thisMoment ? thisMoment.format() : null);
             },
             onLongPress: () => {
-              this.selectDate(thisMoment);
               this.props.onDateLongPress && this.props.onDateLongPress(thisMoment ? thisMoment.format() : null);
             },
             caption: thisMoment.format('D'),

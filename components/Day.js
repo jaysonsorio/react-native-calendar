@@ -114,7 +114,7 @@ export default class Day extends Component {
         </TouchableWithoutFeedback>
       )
       : (
-        <TouchableOpacity
+        <TouchableWithoutFeedback
           onPress={this.props.onPress}
           onLongPress={this.props.onLongPress}
         >
@@ -132,7 +132,7 @@ export default class Day extends Component {
             />
             }
           </View>
-        </TouchableOpacity>
+        </TouchableWithoutFeedback>
       );
   }
 }
